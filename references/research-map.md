@@ -16,6 +16,12 @@ This is the categorized reference map behind the workbench. **Every item below h
 - Decision: EXPERIMENT.
 - Source: https://www.anthropic.com/engineering/multi-agent-research-system
 
+### Stop Building AI Agents, Start Designing AI Systems
+- Pattern: treat agents as parts of a broader system with routing, parallel research, synthesis, validation and persisted artifacts.
+- Travel relevance: closely matches a production vacation planner architecture.
+- Decision: ADOPT as architectural guidance.
+- Source: https://diegohurtadoo.medium.com/stop-building-ai-agents-start-designing-ai-systems-d5a6cb4911a5
+
 ### Ferrata
 - Pattern: tool gateway / infrastructure for LLM tool use.
 - Travel relevance: useful reference for separating tool infrastructure from planner logic.
@@ -119,6 +125,12 @@ This is the categorized reference map behind the workbench. **Every item below h
 - Decision: EXPERIMENT.
 - Source: https://github.com/letta-ai/letta-agent-sdk
 
+### Letta Code
+- Pattern: persistent state/memory applied to coding agents.
+- Travel relevance: indirect stateful-agent reference.
+- Decision: WATCH.
+- Source: https://github.com/letta-ai/letta-code
+
 ### LongMemEval
 - Pattern: evaluate long-term memory retrieval, updates and temporal reasoning.
 - Travel relevance: benchmark whether changed trip preferences and decisions are correctly remembered.
@@ -133,12 +145,24 @@ This is the categorized reference map behind the workbench. **Every item below h
 - Decision: EXPERIMENT.
 - Source: https://github.com/PeterGriffinJin/Search-R1
 
+### Agentic Search Stack
+- Pattern: agentic retrieval as a broader stack rather than a simple vector lookup.
+- Travel relevance: reinforces hybrid retrieval: structured, lexical, semantic, geospatial and iterative retrieval together.
+- Decision: ADOPT the hybrid principle; do not remove vector search solely because agentic retrieval exists.
+- Source: https://medium.com/@buzzgrewal/ai-agents-dont-need-vector-search-anymore-inside-the-agentic-search-stack-replacing-rag-in-2026-58efcabe4f6f
+
 ### Open Knowledge Format (OKF)
 - Pattern: structured, curated knowledge format for stable knowledge.
 - Travel relevance: good fit for tool contracts, business rules, schemas and policies; not live hotel price/availability.
 - Decision: EXPERIMENT.
 - Source: https://github.com/GoogleCloudPlatform/open-knowledge-format
 - Specification: https://github.com/GoogleCloudPlatform/open-knowledge-format/blob/main/SPEC.md
+
+### OKF RAG — AI Agent Architecture
+- Pattern: combining curated knowledge formats with retrieval for agent architectures.
+- Travel relevance: useful for stable travel policies, contracts and domain knowledge; keep live inventory separate.
+- Decision: EXPERIMENT.
+- Source: https://medium.com/@ravishkhullar/okf-rag-the-ultimate-ai-agent-architecture-26b9ceed44f1
 
 ## Caching
 

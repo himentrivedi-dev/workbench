@@ -35,12 +35,14 @@ Running list of saved articles/repos/blogs/papers. **Every entry must contain th
 | 2026-10-23 | [Search-R1](research-map.md#search-r1) | retrieval, agentic-search, research | [source](https://github.com/PeterGriffinJin/Search-R1) |
 | 2026-10-23 | [Open Knowledge Format](research-map.md#okf) | okf, rag, knowledge-management | [source](https://github.com/GoogleCloudPlatform/open-knowledge-format) |
 | 2026-10-23 | [OKF Specification](research-map.md#okf) | okf, rag, knowledge-management | [source](https://github.com/GoogleCloudPlatform/open-knowledge-format/blob/main/SPEC.md) |
-| 2026-10-23 | [Redis Semantic Cache — Documentation](research-map.md#redis-semantic-cache) | caching, latency | [source](https://redis.io/docs/latest/develop/use-cases/semantic-cache/) |
 | 2026-10-23 | [Vacation Planner Agent](research-map.md#vacation-planner-agent) | travel, multi-agent, planning | [source](https://github.com/asim-aa/vacation-planner-agent) |
 | 2026-10-23 | [StarterMonk Travel Planner Agent](research-map.md#startermonk-travel-planner) | travel, langgraph, planning | [source](https://github.com/StarterMonk/Travel_Planner_Agent) |
 | 2026-10-23 | [Letta Awesome](research-map.md#letta) | memory, examples | [source](https://github.com/letta-ai/awesome-letta) |
 | 2026-10-23 | [Letta Agent SDK](research-map.md#letta) | memory, agents, sdk | [source](https://github.com/letta-ai/letta-agent-sdk) |
 | 2026-10-23 | [Letta Code](research-map.md#letta) | memory, agents | [source](https://github.com/letta-ai/letta-code) |
+| 2026-10-23 | [Stop Building AI Agents, Start Designing AI Systems](research-map.md#stop-building-ai-agents) | architecture, agents, orchestration, travel | [source](https://diegohurtadoo.medium.com/stop-building-ai-agents-start-designing-ai-systems-d5a6cb4911a5) |
+| 2026-10-23 | [Agentic Search Stack](research-map.md#agentic-search-stack) | retrieval, agentic-search, rag | [source](https://medium.com/@buzzgrewal/ai-agents-dont-need-vector-search-anymore-inside-the-agentic-search-stack-replacing-rag-in-2026-58efcabe4f6f) |
+| 2026-10-23 | [OKF RAG — AI Agent Architecture](research-map.md#okf-rag) | okf, rag, agents | [source](https://medium.com/@ravishkhullar/okf-rag-the-ultimate-ai-agent-architecture-26b9ceed44f1) |
 
 ## Reference integrity rule
 

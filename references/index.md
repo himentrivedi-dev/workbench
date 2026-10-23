@@ -15,11 +15,11 @@ Running list of saved articles/repos/blogs/papers. **Every entry must contain th
 | 2026-09-21 | [Corsair — Integration Platform](agentic-tooling/corsair-integration-platform.md) | mcp, integrations, oauth, agents, function-calling | [source](https://github.com/corsairdev/corsair) |
 | 2026-10-23 | [Anthropic — Building Effective Agents](research-map.md#anthropic-building-effective-agents) | agents, orchestration, production | [source](https://www.anthropic.com/research/building-effective-agents) |
 | 2026-10-23 | [Anthropic — Multi-Agent Research System](research-map.md#anthropic-multi-agent-research-system) | multi-agent, delegation, parallelism, production | [source](https://www.anthropic.com/engineering/multi-agent-research-system) |
-| 2026-10-23 | [Anthropic — Effective Context Engineering for AI Agents](research-map.md#anthropic-effective-context-engineering) | context, agents, retrieval | [source](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) |
+| 2026-10-23 | [Anthropic — Effective Context Engineering for AI Agents](context/anthropic-effective-context-engineering.md) | context, agents, retrieval | [source](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) |
 | 2026-10-23 | [Anthropic — Code Execution with MCP](research-map.md#anthropic-code-execution-with-mcp) | mcp, context, code-execution | [source](https://www.anthropic.com/engineering/code-execution-with-mcp) |
-| 2026-10-23 | [Headroom](research-map.md#headroom) | context, compression, caching | [source](https://github.com/headroomlabs-ai/headroom) |
+| 2026-10-23 | [Headroom](context/headroom-context-compression.md) | context, compression, caching | [source](https://github.com/headroomlabs-ai/headroom) |
 | 2026-10-23 | [Google ADK — Context Offloading with Artifacts](research-map.md#google-adk-context-offloading) | context, artifacts, adk | [source](https://github.com/google/adk-python/tree/main/contributing/samples/patterns/context_offloading_with_artifact) |
-| 2026-10-23 | [Letta](research-map.md#letta) | memory, stateful-agents | [source](https://github.com/letta-ai/letta) |
+| 2026-10-23 | [Letta](memory/letta-stateful-agent-memory.md) | memory, stateful-agents | [source](https://github.com/letta-ai/letta) |
 | 2026-10-23 | [Letta Documentation](research-map.md#letta) | memory, stateful-agents | [source](https://docs.letta.com/) |
 | 2026-10-23 | [Redis Semantic Cache](research-map.md#redis-semantic-cache) | caching, latency, retrieval | [source](https://redis.io/docs/latest/develop/use-cases/semantic-cache/) |
 | 2026-10-23 | [BFCL — Berkeley Function Calling Leaderboard](research-map.md#bfcl) | evaluation, function-calling, tool-selection | [source](https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard) |

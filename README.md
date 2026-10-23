@@ -1,46 +1,37 @@
 # Enterprise AI / Agentic Systems Workbench
 
-A practical research and architecture workbench for production-grade AI systems, with a focus on travel agents, tool orchestration, planner latency, retrieval, context engineering, memory, execution, and evaluation.
+A practical research and architecture workbench for production-grade AI systems, focused on travel agents, planner latency, tool routing, context engineering, retrieval, execution, and evaluation.
 
-## Research map
+## Start here
 
-| Area | What is captured | Key outcome |
-|---|---|---|
-| [Planning](01-planning/README.md) | Planner gates, dynamic DAGs, hierarchical planning, planner/executor/verifier | Avoid expensive planning when it is unnecessary |
-| [Multi-Agent](02-multi-agent/README.md) | Supervisor/worker, parallel agents, blackboard/state patterns | Split responsibilities without losing control |
-| [Tool Routing](03-tool-routing/README.md) | 43-tool problem, capability registry, tool gateways, dynamic discovery | Reduce tool-selection cost and context size |
-| [Context](04-context/README.md) | Headroom, artifact offloading, context engineering, caching | Send only useful context to the model |
-| [Memory](05-memory/README.md) | Letta/MemGPT, trip state, long-term memory evaluation | Persist state without replaying the whole journey |
-| [Retrieval](06-retrieval/README.md) | Agentic search, hybrid retrieval, OKF/RAG | Combine structured, lexical, semantic and geographic retrieval |
-| [Execution](07-execution/README.md) | DAG runtime, parallelism, retries, recovery, selective replay | Execute plans efficiently and safely |
-| [Evaluation](08-evaluation/README.md) | BFCL, τ-bench, LongMemEval, travel-specific harness | Measure latency, correctness, cost and reliability |
-| [Production Patterns](09-production-patterns/README.md) | Production case studies and architecture patterns | Separate proven patterns from interesting ideas |
-| [Reference Implementations](10-reference-implementations/README.md) | Repositories, papers and articles | Reusable implementation starting points |
-| [Travel Reference Architecture](11-travel-reference-architecture/README.md) | Hotel + Activity + Flight target architecture | Apply the research to the actual travel problem |
+- **[Canonical Agentic Travel Architecture](design/agentic-travel-architecture/README.md)** — target architecture, Planner Gate, capability/dependency registry, runtime, memory/context boundaries, and design decisions.
+- **[Benchmark Plan](design/agentic-travel-architecture/benchmark-plan.md)** — variants, scenario matrix, metrics, and decision gates.
+- **[Research Reference Index](references/index.md)** — curated external articles, papers, and repositories. Each detailed reference should preserve its original source URL.
+- [Reference library README](references/README.md)
+- [Research map](references/research-map.md)
 
-## Decision framework
+## Focused design notes
 
-Each idea is classified as:
-
-- **ADOPT** — strong fit for the current architecture and low enough risk to implement.
-- **EXPERIMENT** — promising, but requires an internal benchmark or prototype.
-- **WATCH** — useful architectural signal, but insufficient production evidence.
-- **REJECT** — conflicts with correctness, latency, operational or source-of-truth requirements.
+| Topic | Focus |
+|---|---|
+| [Planning](01-planning/README.md) | Planner Gate, dynamic DAG planning, planner/executor boundaries |
+| [Tool routing](03-tool-routing/README.md) | Capability registry, tool discovery, routing and tool selection |
+| [Retrieval](06-retrieval/README.md) | Hybrid structured, lexical, semantic and geographic retrieval |
+| [Execution](07-execution/README.md) | DAG scheduling, retries, recovery and durable execution |
+| [Evaluation](08-evaluation/README.md) | Quality, latency, cost and travel-specific evaluation |
 
 ## Core principle
 
 > Do not make the LLM solve a problem that deterministic software, a cache, a capability registry, a retrieval layer, or a DAG scheduler can solve faster and more reliably.
 
-## Current target architecture
+## Primary KPI
 
-`User -> Planner Gate -> Direct Domain Agent OR Dynamic Planner -> Capability/Dependency Registry -> DAG Runtime -> Parallel Tool Execution -> Validation/Merge -> State + Artifacts -> Response`
+**Cost + p95 latency per successfully completed, constraint-correct travel plan.**
 
-The existing dynamic planner remains valuable. The main optimization is to **avoid invoking it for high-confidence single-domain requests**, while preserving it for multi-domain, ambiguous, or genuinely compositional requests.
+## Repository organization
 
-## Travel-specific benchmark goal
+- `design/`: internal architecture decisions and benchmark plans.
+- `references/`: external research notes, original source links, and the master index.
+- Numbered topic folders: focused design notes; the canonical end-to-end architecture lives under `design/agentic-travel-architecture/`.
 
-The primary KPI is not raw model latency. It is:
-
-**cost + p95 latency per successfully completed, constraint-correct travel plan**.
-
-See [Travel Reference Architecture](11-travel-reference-architecture/README.md) and [Evaluation](08-evaluation/README.md).
+When adding research, preserve the source URL in the detailed note and add the item to `references/index.md` in the same change.

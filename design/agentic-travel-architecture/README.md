@@ -118,7 +118,7 @@ Track:
 
 Use the detailed source notes rather than duplicating their full content here:
 - [OpenAI function calling at 340 tools](../../references/agentic-tooling/openai-function-calling-340-tools-production.md) — https://pub.towardsai.net/openai-function-calling-works-great-until-you-have-340-tools-12-tenants-real-production-traffic-fe02da116e39
-- [Ferrata tool gateway](../../references/agentic-tooling/ferrata-tool-gateway.md) — https://github.com/rajumb502/ferrata
+- [Ferrata repository](https://github.com/rajumb502/ferrata) — https://github.com/rajumb502/ferrata
 - [Headroom context compression](../../references/context/headroom-context-compression.md) — https://github.com/headroomlabs-ai/headroom
 - [Anthropic context engineering](../../references/context/anthropic-effective-context-engineering.md) — https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
 - [Letta stateful memory](../../references/memory/letta-stateful-agent-memory.md) — https://github.com/letta-ai/letta

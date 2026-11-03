@@ -43,6 +43,7 @@ Running list of saved articles/repos/blogs/papers. **Every entry must contain th
 | 2026-10-23 | [Stop Building AI Agents, Start Designing AI Systems](research-map.md#stop-building-ai-agents) | architecture, agents, orchestration, travel | [source](https://diegohurtadoo.medium.com/stop-building-ai-agents-start-designing-ai-systems-d5a6cb4911a5) |
 | 2026-10-23 | [Agentic Search Stack](research-map.md#agentic-search-stack) | retrieval, agentic-search, rag | [source](https://medium.com/@buzzgrewal/ai-agents-dont-need-vector-search-anymore-inside-the-agentic-search-stack-replacing-rag-in-2026-58efcabe4f6f) |
 | 2026-10-23 | [OKF RAG — AI Agent Architecture](research-map.md#okf-rag) | okf, rag, agents | [source](https://medium.com/@ravishkhullar/okf-rag-the-ultimate-ai-agent-architecture-26b9ceed44f1) |
+| 2026-11-03 | [Travel & Lodging Evaluation Research](travel-lodging-eval/references.md) | evaluation, travel, lodging, retrieval, ranking | [source](travel-lodging-eval/references.md) |
 
 ## Reference integrity rule
 

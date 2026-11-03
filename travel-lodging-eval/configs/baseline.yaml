@@ -1,0 +1,40 @@
+# Example configuration. Replace values with your production SLA/quality targets.
+metrics:
+  retrieval:
+    k: [5, 10, 20, 50]
+  ranking:
+    k: [5, 10, 20]
+  latency:
+    percentiles: [50, 95, 99]
+
+gates:
+  # Gates are intentionally conservative placeholders. Tune from your baseline.
+  hard_constraint_violation_rate:
+    max_relative_regression: 0.00
+  price_availability_error_rate:
+    max_relative_regression: 0.00
+  geo_accuracy:
+    max_relative_regression: 0.01
+  recall_at_20:
+    max_relative_regression: 0.02
+  ndcg_at_10:
+    max_relative_regression: 0.02
+  p95_latency_ms:
+    max_relative_regression: 0.10
+  cost_per_query:
+    max_relative_regression: 0.10
+
+slices:
+  - all
+  - location
+  - geo
+  - price
+  - amenity
+  - multi_constraint
+  - natural_language
+  - ambiguous
+  - impossible
+  - typo
+  - multilingual
+  - long_tail
+  - supplier

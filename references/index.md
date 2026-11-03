@@ -45,6 +45,14 @@ Running list of saved articles/repos/blogs/papers. **Every entry must contain th
 | 2026-10-23 | [OKF RAG — AI Agent Architecture](research-map.md#okf-rag) | okf, rag, agents | [source](https://medium.com/@ravishkhullar/okf-rag-the-ultimate-ai-agent-architecture-26b9ceed44f1) |
 | 2026-11-03 | [Travel & Lodging Evaluation Research](travel-lodging-eval/references.md) | evaluation, travel, lodging, retrieval, ranking | [source](travel-lodging-eval/references.md) |
 
+| 2026-11-03 | [TravelPlanner](travel-lodging-eval/dimension-benchmark-map.md#travelplanner) | evaluation, travel, constraints | [source](https://github.com/OSU-NLP-Group/TravelPlanner) |
+
+| 2026-11-03 | [TravelBench (ACL 2026)](travel-lodging-eval/dimension-benchmark-map.md#travelbench-acl-2026) | evaluation, travel, multi-turn | [source](https://aclanthology.org/2026.acl-long.1347/) |
+
+| 2026-11-03 | [PriceBench](travel-lodging-eval/dimension-benchmark-map.md#pricebench) | evaluation, hotel, ranking-bias | [source](https://arxiv.org/abs/2609.31468) |
+
+| 2026-11-03 | [HotelOps-Bench](travel-lodging-eval/dimension-benchmark-map.md#hotelops-bench) | evaluation, hotel, tool-use | [source](https://github.com/rrhoopes3/HotelOps-Bench) |
+
 ## Reference integrity rule
 
 A reference is incomplete if its original URL is missing. When adding a new note, add the source URL to this index in the same change.

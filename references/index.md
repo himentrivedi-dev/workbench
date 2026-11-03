@@ -51,8 +51,6 @@ Running list of saved articles/repos/blogs/papers. **Every entry must contain th
 | 2026-11-03 | [HotelOps-Bench](travel-lodging-eval/dimension-benchmark-map.md#hotelops-bench) | evaluation, hotel, tool-use | [source](https://github.com/rrhoopes3/HotelOps-Bench) |
 | 2026-11-03 | [TravelPlanner Benchmark](travel-lodging-eval/dimension-benchmark-map.md#travelplanner) | evaluation, travel, constraints | [source](https://github.com/OSU-NLP-Group/TravelPlanner) |
 | 2026-11-03 | [TravelBench](travel-lodging-eval/dimension-benchmark-map.md#travelbench-acl-2026) | evaluation, travel, multi-turn | [source](https://aclanthology.org/2026.acl-long.1347/) |
-| 2026-11-03 | [PriceBench](travel-lodging-eval/dimension-benchmark-map.md#pricebench) | evaluation, travel, choice-bias | [source](https://arxiv.org/abs/2609.31468) |
-| 2026-11-03 | [HotelOps-Bench](travel-lodging-eval/dimension-benchmark-map.md#hotelops-bench) | evaluation, hotel, tool-use | [source](https://github.com/rrhoopes3/HotelOps-Bench) |
 
 ## Reference integrity rule
 

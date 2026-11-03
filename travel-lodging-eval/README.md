@@ -78,3 +78,11 @@ Thresholds belong in the environment-specific config rather than being hard-code
 ## External research used
 
 The framework incorporates ideas from HotelQuEST, TravelEval, TREK, Expedia hotel ranking work, WebTailBench travel tasks, and established IR metrics. All original source links are preserved in `references/index.md` as required by this repository.
+
+## Benchmark mapping and release process
+
+- [Dimension-to-benchmark map](dimension-benchmark-map.md): maps each evaluation dimension to public resources, metrics, and catalog-specific work.
+- [Benchmark adoption plan](benchmark-adoption-plan.md): what to reuse from TravelPlanner, TravelBench, PriceBench, tau-bench, HotelOps-Bench, TravelEval, TREK, WebTailBench, HotelQuEST and Expedia LTR—and what not to claim.
+- [Release gates and evaluation protocol](release-gates.md): hard gates, statistical discipline, slices, position-bias checks, and judge governance.
+
+The benchmark map is an extension to the original retrieval foundation. Public benchmarks are methodology inputs; the release gate must be driven by our own versioned catalog snapshot, qrels, source-of-truth assertions, and service telemetry.

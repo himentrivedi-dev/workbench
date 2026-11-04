@@ -79,6 +79,10 @@ Thresholds belong in the environment-specific config rather than being hard-code
 
 The framework incorporates ideas from HotelQuEST, TravelEval, TREK, Expedia hotel ranking work, WebTailBench travel tasks, and established IR metrics. All original source links are preserved in `references/index.md` as required by this repository.
 
+## Advanced query understanding test cases
+
+- [Advanced query understanding & constraint reasoning cases](datasets/advanced-query-understanding-cases.md): negative presence, indirect context, conflicting preferences, ambiguity, negation scope, and contextual trade-offs.
+
 ## Benchmark mapping and release process
 
 - [Dimension-to-benchmark map](dimension-benchmark-map.md): maps each evaluation dimension to public resources, metrics, and catalog-specific work.

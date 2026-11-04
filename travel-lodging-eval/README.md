@@ -81,7 +81,8 @@ The framework incorporates ideas from HotelQuEST, TravelEval, TREK, Expedia hote
 
 ## Advanced query understanding test cases
 
-- [Advanced query understanding & constraint reasoning cases](datasets/advanced-query-understanding-cases.md): negative presence, indirect context, conflicting preferences, ambiguity, negation scope, and contextual trade-offs.
+- [Advanced query cases — core set](datasets/advanced-query-cases.md): five initial cases covering dense constraints, nuanced spatial preferences, clarification, code-mixed queries, and contradictory constraints.
+- [Advanced query understanding & constraint reasoning cases](datasets/advanced-query-understanding-cases.md): seven additional cases covering negative presence, indirect context, conflicting preferences, ambiguity, negation scope, and contextual trade-offs.
 
 ## Benchmark mapping and release process
 

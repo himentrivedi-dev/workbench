@@ -32,12 +32,21 @@ Use the detailed examples in the skill files and the existing `travel-lodging-ev
 4. Implement timeout, retry, and idempotency behaviour without hiding partial failure.
 5. Stop and ask when requirements or ownership are too unclear to implement safely.
 
+## Bug Investigation
+1. **Simple deterministic defect:** An endpoint returns an error when an optional field is absent. Reproduce it, trace the cause, make the smallest safe fix, add a regression test, and run focused verification. Do not launch specialists.
+2. **Complex production timeout:** A travel search intermittently times out after parallel supplier calls. Separate observations from hypotheses; inspect fan-out, timeout budgets, retries, cancellation, and partial results. Recommend containment if user impact is ongoing.
+3. **Flaky asynchronous behaviour:** A test intermittently fails because a background task races with response assembly. Narrow the reproduction and test the concurrency hypothesis before changing synchronization.
+4. **Misleading symptom:** A retrieval result is wrong because stale source data was ingested, not because vector ranking is defective. Trace the data lineage to the source and test the actual causal path.
+5. **Repeated failed patches:** Three fixes have reduced symptoms but not resolved a recurring incident. Revisit the causal model and consider whether a design or ownership boundary is responsible; do not add another speculative patch.
+
 ## Technical Review
-1. Review a PR that has a real correctness defect and several harmless style differences.
-2. Review a central planner proposal with no evidence that it outperforms a simple router.
-3. Review an AI agent flow for tool selection, DAG dependencies, retries, and recovery.
-4. Review a retrieval change for recall, ranking, geo fit, freshness, and hard-constraint correctness.
-5. Review a change where tests were not run; state that limitation rather than implying success.
+1. **Requirement failure:** A PR passes tests but returns the wrong business outcome for a stated acceptance criterion. Identify the specification gap independently of code quality.
+2. **Engineering quality failure:** A PR meets the requirement but introduces an unsafe broad exception handler or silent fallback. Explain the failure mode and impact.
+3. **Two-axis distinction:** A clean, well-tested implementation does not satisfy the product requirement. Report specification compliance and engineering quality separately.
+4. **Targeted specialist:** A PR changes authentication and sensitive-data handling. Use a security-focused review in addition to the primary review; do not invoke unrelated specialists.
+5. **Complex AI orchestration:** A PR adds parallel tool execution and dynamic DAG dependencies. Consider targeted testing, error-handling, and architecture review based on concrete risks; avoid duplicative agents.
+6. Review a retrieval change for recall, ranking, geo fit, freshness, and hard-constraint correctness.
+7. Review a change where tests were not run; state that limitation rather than implying success.
 
 ## Engineering Quality
 1. Assess an activity retrieval service for correctness, latency, reliability, security, scalability, observability, maintainability, and cost.
@@ -79,4 +88,4 @@ Use the detailed examples in the skill files and the existing `travel-lodging-ev
 2. Architecture proposal → Technical Review → ADR → Architecture Documentation.
 3. PR implementation → Engineering Implementation → Technical Review → Engineering Quality.
 4. API launch → Requirements → Quality assessment → Diátaxis documentation.
-5. Production issue → evidence-based review → clear leadership communication → follow-up actions.
+5. Production issue → Bug Investigation → Engineering Implementation → Technical Review → clear leadership communication and follow-up actions.

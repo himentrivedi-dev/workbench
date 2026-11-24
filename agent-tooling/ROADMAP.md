@@ -10,11 +10,12 @@ The phases are an adoption sequence, not a requirement to build everything befor
 |---|---|---|---|
 | First-principles problem solving | `../.claude/skills/first-principles/SKILL.md` | Clear problem framing and challenged assumptions | 1 |
 | Technical writing | `../.claude/skills/technical-writing/SKILL.md` | Clear, accurate, audience-aware documents | 1 |
-| Technical review | `../.claude/skills/technical-review/SKILL.md` | Evidence-based design and PR reviews | 1 |
+| Technical review | `../.claude/skills/technical-review/SKILL.md` | Two-axis PR review: specification compliance and engineering quality | 1 |
 | Leadership communication | `../.claude/skills/leadership-communication/SKILL.md` | Decision-oriented updates for stakeholders | 1 |
 | Requirements engineering | `../.claude/skills/requirements-engineering/SKILL.md` | Testable requirements and traceability | 2 |
 | Architecture design | `../.claude/skills/architecture-design/SKILL.md` | Alternatives, boundaries, trade-offs, decisions | 2 |
 | Engineering implementation | `../.claude/skills/engineering-implementation/SKILL.md` | Small, verified delivery increments | 2 |
+| Bug investigation | `../.claude/skills/bug-investigation/SKILL.md` | Adaptive, evidence-led diagnosis and regression prevention | 2 |
 | Engineering quality | `../.claude/skills/engineering-quality/SKILL.md` | Measurable production quality | 2 |
 | Diátaxis documentation | `../.claude/skills/diataxis-documentation/SKILL.md` | Documentation organised by reader need | 3 |
 | Architecture documentation | `../.claude/skills/architecture-documentation/SKILL.md` | C4, ADR, flows, interfaces and deployment views | 3 |
@@ -35,14 +36,15 @@ The phases are an adoption sequence, not a requirement to build everything befor
 
 ## Phase 2 — Engineering definition and delivery
 
-**Build:** Requirements Engineering, Architecture Design, Engineering Implementation, Engineering Quality.
+**Build:** Requirements Engineering, Architecture Design, Engineering Implementation, Bug Investigation, Engineering Quality.
 
-**Why second:** These skills make the engineering lifecycle more repeatable—from an ambiguous request to a tested, production-aware implementation.
+**Why second:** These skills make the engineering lifecycle more repeatable—from an ambiguous request to a tested, production-aware implementation and a verified defect fix.
 
 **Exit gate:**
 - Requirements are testable and traceable to acceptance criteria.
 - Architecture reviews compare viable alternatives and state trade-offs.
 - Implementation plans include tests, verification and rollback/recovery where relevant.
+- Bug fixes include evidence for the cause, a regression test, and explicit verification results.
 - Quality claims are tied to evidence and measurable indicators.
 
 ## Phase 3 — Documentation system

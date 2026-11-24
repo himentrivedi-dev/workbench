@@ -1,49 +1,58 @@
 # Engineering Operating System
 
-A lightweight set of principles, workflows, and Claude Code skills for engineering work across individual contribution, technical leadership, and engineering management.
-
-The aim is not to add process for its own sake. It is to make technical work more reliable and communication easier to understand.
+A practical, lightweight system for engineering work across individual contribution, technical leadership, and engineering management.
 
 ## Start here
 
-1. [Engineering principles](standards/ENGINEERING_PRINCIPLES.md) — how to frame problems, make decisions, and deliver systems.
-2. [Writing principles](standards/WRITING_PRINCIPLES.md) — how to write clearly without losing technical meaning.
-3. [Review principles](standards/REVIEW_PRINCIPLES.md) — how to give evidence-based, constructive technical feedback.
+1. [Engineering principles](standards/ENGINEERING_PRINCIPLES.md)
+2. [Writing principles](standards/WRITING_PRINCIPLES.md)
+3. [Review principles](standards/REVIEW_PRINCIPLES.md)
+4. [Phased roadmap and acceptance gates](ROADMAP.md)
+5. [How to test and iterate](evals/README.md)
 
-## Existing skills
+## Claude Code skills
 
-- [Git workflow](skills/git-workflow/SKILL.md) — safe, incremental Git operations and parallel-work integration.
+Project-level skills live in `.claude/skills/` so Claude Code can discover them when this repository is opened as the project.
 
-## Planned skill areas
-
-Skills will be added incrementally and evaluated against realistic work before they become part of the standard workflow.
-
-| Area | Intended capabilities |
+| Skill | Use it for |
 |---|---|
-| Thinking | First-principles problem framing and assumption testing |
-| Definition | Requirements analysis and acceptance criteria |
-| Design | Architecture options, trade-offs, and decision records |
-| Delivery | Implementation, testing, and engineering quality |
-| Review | PR, architecture, and production-readiness reviews |
-| Documentation | Technical writing, Diátaxis, and architecture documentation |
-| Leadership | Clear status, decision, risk, and stakeholder communication |
+| [First Principles](../.claude/skills/first-principles/SKILL.md) | Frame problems and challenge assumptions |
+| [Requirements Engineering](../.claude/skills/requirements-engineering/SKILL.md) | Define testable requirements and acceptance criteria |
+| [Architecture Design](../.claude/skills/architecture-design/SKILL.md) | Compare options, boundaries, and trade-offs |
+| [Engineering Implementation](../.claude/skills/engineering-implementation/SKILL.md) | Implement small, verified changes |
+| [Engineering Quality](../.claude/skills/engineering-quality/SKILL.md) | Assess production quality and release readiness |
+| [Technical Review](../.claude/skills/technical-review/SKILL.md) | Review PRs, designs, and production readiness |
+| [Technical Writing](../.claude/skills/technical-writing/SKILL.md) | Write and review clear technical content |
+| [Diátaxis Documentation](../.claude/skills/diataxis-documentation/SKILL.md) | Organise docs by reader need |
+| [Architecture Documentation](../.claude/skills/architecture-documentation/SKILL.md) | Document systems, flows, decisions, and deployment |
+| [Leadership Communication](../.claude/skills/leadership-communication/SKILL.md) | Communicate status, risks, and decisions |
+
+The existing [Git workflow skill](skills/git-workflow/SKILL.md) remains in this library and is not replaced.
+
+## How to use
+
+- Open this repository as the Claude Code project. Invoke a skill by its name or describe the task; verify discovery in your installed Claude Code version.
+- Use the smallest relevant skill. Do not chain all skills for a small task.
+- Shared standards live here; skill-specific workflows live in `.claude/skills/`.
+- Templates live in [templates](templates/). Evaluation cases and the scorecard live in [evals](evals/).
+- The roadmap defines the build phases and exit gates.
 
 ## Design rules
 
-- Keep each `SKILL.md` focused on when to use it, its workflow, expected output, and quality checks.
-- Put detailed standards, examples, and templates in separate files. Load them only when needed.
-- Prefer deterministic tools and checks for work they can perform reliably.
-- Require evidence for findings and explicit assumptions for uncertain conclusions.
-- Test skills against representative tasks. Keep a skill only when it improves correctness, clarity, completeness, or efficiency.
-- Avoid duplicating shared principles across skills.
+- Keep each `SKILL.md` concise and task-focused.
+- Load templates, examples, and detailed references only when needed.
+- Do not duplicate shared principles.
+- Require evidence for findings and label assumptions.
+- Prefer deterministic software for deterministic work.
+- A skill is not considered validated until it has been tested against a baseline.
 
-## How to add a skill
+## Add or change a skill
 
-1. State the problem the skill solves and when it should be used.
-2. Define the minimum useful workflow and output contract.
-3. Link to relevant standards instead of copying them into the skill.
-4. Add representative positive, negative, and ambiguous evaluation cases.
-5. Compare results with and without the skill.
-6. Record limitations and maintenance ownership.
+1. Define the behaviour it should improve.
+2. Add normal, ambiguous, contradictory, negative, and out-of-scope cases as appropriate.
+3. Compare baseline and skill-assisted outputs with the same model and context.
+4. Score correctness, completeness, clarity, actionability, evidence, and efficiency.
+5. Analyse failures, make the smallest change, and re-run regression cases.
+6. Record the decision and limitations.
 
-This directory is the source library. Claude Code discovery and installation conventions should be handled explicitly when the skill set is ready; do not assume every file under this directory is automatically loaded by Claude Code.
+See [evaluation guide](evals/README.md) and [scorecard](evals/scorecard.md).

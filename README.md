@@ -7,6 +7,7 @@ A practical research and architecture workbench for production-grade AI systems,
 - **[Canonical Agentic Travel Architecture](design/agentic-travel-architecture/README.md)** — target architecture, Planner Gate, capability/dependency registry, runtime, memory/context boundaries, and design decisions.
 - **[Benchmark Plan](design/agentic-travel-architecture/benchmark-plan.md)** — variants, scenario matrix, metrics, and decision gates.
 - **[Research Reference Index](references/index.md)** — curated external articles, papers, and repositories. Each detailed reference should preserve its original source URL.
+- **[Engineering Operating System](agent-tooling/README.md)** — shared engineering, writing, and review principles; Claude Code skill library.
 - [Reference library README](references/README.md)
 - [Research map](references/research-map.md)
 
@@ -32,6 +33,7 @@ A practical research and architecture workbench for production-grade AI systems,
 
 - `design/`: internal architecture decisions and benchmark plans.
 - `references/`: external research notes, original source links, and the master index.
+- `agent-tooling/`: engineering principles and reusable Claude Code skills.
 - Numbered topic folders: focused design notes; the canonical end-to-end architecture lives under `design/agentic-travel-architecture/`.
 
 When adding research, preserve the source URL in the detailed note and add the item to `references/index.md` in the same change.

@@ -20,8 +20,9 @@ Project-level skills live in `.claude/skills/` so Claude Code can discover them 
 | [Requirements Engineering](../.claude/skills/requirements-engineering/SKILL.md) | Define testable requirements and acceptance criteria |
 | [Architecture Design](../.claude/skills/architecture-design/SKILL.md) | Compare options, boundaries, and trade-offs |
 | [Engineering Implementation](../.claude/skills/engineering-implementation/SKILL.md) | Implement small, verified changes |
+| [Bug Investigation](../.claude/skills/bug-investigation/SKILL.md) | Diagnose defects adaptively and verify root-cause fixes |
 | [Engineering Quality](../.claude/skills/engineering-quality/SKILL.md) | Assess production quality and release readiness |
-| [Technical Review](../.claude/skills/technical-review/SKILL.md) | Review PRs, designs, and production readiness |
+| [Technical Review](../.claude/skills/technical-review/SKILL.md) | Review requirements and engineering quality independently |
 | [Technical Writing](../.claude/skills/technical-writing/SKILL.md) | Write and review clear technical content |
 | [Diátaxis Documentation](../.claude/skills/diataxis-documentation/SKILL.md) | Organise docs by reader need |
 | [Architecture Documentation](../.claude/skills/architecture-documentation/SKILL.md) | Document systems, flows, decisions, and deployment |

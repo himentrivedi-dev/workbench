@@ -1,0 +1,4 @@
+checkpoint_id,requirement,risk,preconditions,action,expected,actual,status,evidence_path,run_id,commit_sha,environment,executed_at_utc,notes
+API-001,,,,,,,,,,,,,
+UI-001,,,,,,,,,,,,,
+DEP-001,,,,,,,,,,,,,
